@@ -43,7 +43,7 @@ function detectPersonalLevel() {
     } else if (personalMovieDB.count >= 10 && personalMovieDB < 30) {
         console.log('medium amount of films');
     } else if (personalMovieDB.count >= 30) {
-        console.log('a lot of films nigga');
+        console.log('a lot of films');
     } else {
         console.log('your mom gae');
     }
