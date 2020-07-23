@@ -1,26 +1,17 @@
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    test: function() {
-        console.log('test');
-    }
-};
+const arr = [1, 45, 4 ,69, 8];
 
-options.test();
+arr.sort( compareNum);
+console.log(arr);
 
-console.log(Object.keys(options).length);
-
-for (let key in options) {
-    if (typeof(options[key]) == 'object') {
-        for (let i in options[key]) {
-            console.log(`key: ${i} has: ${options[key][i]}`);
-        }
-    } else {
-        console.log(`key: ${key} has: ${options[key]}`);
-    }
+function compareNum(a, b) {
+    return a - b;
 }
+
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} inside of the array ${arr}`);
+});
+
+const  str = prompt("", "");
+const products = str.split(", ");
+products.sort();
+console.log(products.join('; '));
